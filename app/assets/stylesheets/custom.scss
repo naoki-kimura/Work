@@ -4,6 +4,7 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
+$white: #FFFFFF;
 
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
@@ -15,6 +16,8 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
+  background-image: url(pexels-photo-297755.jpeg);
+  background-size: cover;
 }
 
 section {
@@ -27,15 +30,22 @@ textarea {
 
 .center {
   text-align: center;
+  background-color: transparent;
   h1 {
     margin-bottom: 10px;
+    color: #FFF;
   }
+}
+
+.bg {
+  background-color: rgba(0,0,0,0.8);
 }
 
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  color: white;
 }
 
 h1 {
@@ -45,20 +55,19 @@ h1 {
   text-align: center;
 }
 
+
 h2 {
   font-size: 1.2em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
-
 
 /* header */
 
@@ -72,7 +81,7 @@ p {
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: #CCFFFF;
     text-decoration: none;
   }
 }
@@ -87,7 +96,7 @@ footer {
   a {
     color: $gray;
     &:hover {
-      color: $gray-darker;
+      color: $gray-light;
     }
   }
   small {

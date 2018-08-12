@@ -14,6 +14,6 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def contact
+  def county
   end
 end
